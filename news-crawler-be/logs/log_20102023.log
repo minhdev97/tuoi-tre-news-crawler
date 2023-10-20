@@ -1,0 +1,3 @@
+20.10.2023 11:04:01.322 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Starting NewsCrawlerBeApplication using Java 17.0.7 with PID 7112 (D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be\target\classes started by Quang Minh in D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be)
+20.10.2023 11:04:01.325 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - No active profile set, falling back to 1 default profile: "default"
+20.10.2023 11:04:21.744 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Started NewsCrawlerBeApplication in 22.701 seconds (process running for 24.685)

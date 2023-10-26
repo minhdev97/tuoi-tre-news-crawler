@@ -3,7 +3,7 @@
     <property name="LOG_DIR" value="./logs" />
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-<!--        <file>${LOG_DIR}/log.log</file>-->
+        <!--        <file>${LOG_DIR}/log.log</file>-->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>${LOG_DIR}/log_%d{ddMMyyyy}.log</fileNamePattern>
             <maxHistory>7</maxHistory> <!-- Number of days to keep logs -->
@@ -13,11 +13,11 @@
         </encoder>
     </appender>
 
-    <logger name="com.project.newspaper" level="info" additivity="false">
+    <logger name="com.meu.news_crawler_be" level="info" additivity="false">
         <appender-ref ref="FILE" />
     </logger>
 
-    <root level="error">
+    <root level="info">
         <appender-ref ref="FILE" />
     </root>
 </configuration>

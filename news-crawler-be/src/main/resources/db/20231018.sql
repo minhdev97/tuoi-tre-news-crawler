@@ -17,7 +17,7 @@ CREATE TABLE Category (
     category_name VARCHAR
 );
 
-CREATE TABLE NewsDetail (
+CREATE TABLE news_detail (
     id VARCHAR PRIMARY KEY,
     title TEXT,
     img TEXT,
@@ -53,24 +53,7 @@ CREATE TRIGGER category_auto_uuid
     FOR EACH ROW
     EXECUTE FUNCTION category_generate_uuid();
 
--- Trigger for auto-generating UUID before adding NewsDetail object
-CREATE OR REPLACE FUNCTION newsdetail_generate_uuid()
-RETURNS TRIGGER AS $$
-BEGIN
-    IF NEW.id IS NULL THEN
-        NEW.id = generate_uuid();
-    END IF;
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
-
-CREATE TRIGGER newsdetail_auto_uuid
-    BEFORE INSERT
-    ON NewsDetail
-    FOR EACH ROW
-    EXECUTE FUNCTION newsdetail_generate_uuid();
-	
-	-- Thêm các giá trị vào bảng Category
+	-- Add value to category
 INSERT INTO Category (category_name) VALUES
   ('Trang chủ'),
   ('Thời sự'),

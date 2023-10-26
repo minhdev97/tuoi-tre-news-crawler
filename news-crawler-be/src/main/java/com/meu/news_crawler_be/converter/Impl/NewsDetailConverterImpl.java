@@ -14,6 +14,7 @@ public class NewsDetailConverterImpl implements NewsDetailConverter {
     @Override
     public HomePageNewsResponseDTO newsEntityToHomePageResponse(NewsDetail newsDetail) {
         return HomePageNewsResponseDTO.builder()
+                .id(newsDetail.getId())
                 .category(newsDetail.getCategory().getCategoryName())
                 .img(newsDetail.getImg())
                 .title(newsDetail.getTitle())

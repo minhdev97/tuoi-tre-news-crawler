@@ -12,6 +12,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class HomePageNewsResponseDTO {
+    private String id;
     private String publishDate;
     private String title;
     private String img;

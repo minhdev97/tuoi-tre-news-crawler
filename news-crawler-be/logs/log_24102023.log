@@ -1,0 +1,550 @@
+24.10.2023 09:17:40.602 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Starting NewsCrawlerBeApplication using Java 17.0.7 with PID 11752 (D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be\target\classes started by Quang Minh in D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be)
+24.10.2023 09:17:40.607 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - No active profile set, falling back to 1 default profile: "default"
+24.10.2023 09:17:40.772 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+24.10.2023 09:17:40.773 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+24.10.2023 09:17:42.416 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+24.10.2023 09:17:42.502 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74 ms. Found 2 JPA repository interfaces.
+24.10.2023 09:17:43.958 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+24.10.2023 09:17:43.968 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+24.10.2023 09:17:43.971 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+24.10.2023 09:17:43.972 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+24.10.2023 09:17:44.054 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+24.10.2023 09:17:44.054 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3280 ms
+24.10.2023 09:17:44.337 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+24.10.2023 09:17:44.445 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+24.10.2023 09:17:44.447 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+24.10.2023 09:17:44.678 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+24.10.2023 09:17:44.863 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+24.10.2023 09:17:44.891 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+24.10.2023 09:17:45.176 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27686388
+24.10.2023 09:17:45.178 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+24.10.2023 09:17:45.557 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+24.10.2023 09:17:46.771 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+24.10.2023 09:17:46.901 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+24.10.2023 09:17:48.398 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+24.10.2023 09:17:49.603 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+24.10.2023 09:17:50.890 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+24.10.2023 09:17:50.929 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+24.10.2023 09:17:50.961 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+24.10.2023 09:17:50.980 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Started NewsCrawlerBeApplication in 11.462 seconds (process running for 13.327)
+24.10.2023 09:20:58.124 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24.10.2023 09:20:58.124 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+24.10.2023 09:20:58.130 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+24.10.2023 10:07:37.140 [http-nio-8080-exec-5] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:07:37.208 [http-nio-8080-exec-5] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:07:37.211 [http-nio-8080-exec-5] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [undefined]!```
+24.10.2023 10:07:37.212 [http-nio-8080-exec-5] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:07:37.245 [http-nio-8080-exec-5] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [undefined]!```
+24.10.2023 10:07:37.245 [http-nio-8080-exec-5] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:07:37.333 [http-nio-8080-exec-5] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:07:37.371 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:09:37.750 [http-nio-8080-exec-8] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:09:37.750 [http-nio-8080-exec-8] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:09:37.750 [http-nio-8080-exec-8] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [undefined]!```
+24.10.2023 10:09:37.751 [http-nio-8080-exec-8] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:09:37.752 [http-nio-8080-exec-8] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [undefined]!```
+24.10.2023 10:09:37.752 [http-nio-8080-exec-8] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:09:37.756 [http-nio-8080-exec-8] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:09:37.757 [http-nio-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:10:49.293 [http-nio-8080-exec-1] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:10:49.294 [http-nio-8080-exec-1] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:10:49.294 [http-nio-8080-exec-1] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [undefined]!```
+24.10.2023 10:10:49.294 [http-nio-8080-exec-1] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:10:49.295 [http-nio-8080-exec-1] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [undefined]!```
+24.10.2023 10:10:49.296 [http-nio-8080-exec-1] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:10:49.298 [http-nio-8080-exec-1] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:10:49.299 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:11:35.286 [http-nio-8080-exec-4] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:11:35.286 [http-nio-8080-exec-4] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:11:35.286 [http-nio-8080-exec-4] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [undefined]!```
+24.10.2023 10:11:35.286 [http-nio-8080-exec-4] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:11:35.287 [http-nio-8080-exec-4] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [undefined]!```
+24.10.2023 10:11:35.287 [http-nio-8080-exec-4] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:11:35.289 [http-nio-8080-exec-4] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:11:35.290 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:11:44.135 [http-nio-8080-exec-5] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:11:44.135 [http-nio-8080-exec-5] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:11:44.136 [http-nio-8080-exec-5] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [undefined]!```
+24.10.2023 10:11:44.136 [http-nio-8080-exec-5] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:11:44.138 [http-nio-8080-exec-5] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [undefined]!```
+24.10.2023 10:11:44.138 [http-nio-8080-exec-5] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:11:44.144 [http-nio-8080-exec-5] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:11:44.145 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:11:52.984 [http-nio-8080-exec-9] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:11:52.984 [http-nio-8080-exec-9] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:11:52.985 [http-nio-8080-exec-9] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [undefined]!```
+24.10.2023 10:11:52.985 [http-nio-8080-exec-9] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:11:52.986 [http-nio-8080-exec-9] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [undefined]!```
+24.10.2023 10:11:52.986 [http-nio-8080-exec-9] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:11:52.988 [http-nio-8080-exec-9] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:11:52.989 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:12:15.690 [http-nio-8080-exec-2] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:12:15.690 [http-nio-8080-exec-2] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:12:15.691 [http-nio-8080-exec-2] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [undefined]!```
+24.10.2023 10:12:15.692 [http-nio-8080-exec-2] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:12:15.692 [http-nio-8080-exec-2] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [undefined]!```
+24.10.2023 10:12:15.692 [http-nio-8080-exec-2] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:12:15.694 [http-nio-8080-exec-2] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:12:15.695 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:15:20.383 [http-nio-8080-exec-1] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:15:20.383 [http-nio-8080-exec-1] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:15:20.383 [http-nio-8080-exec-1] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [undefined]!```
+24.10.2023 10:15:20.383 [http-nio-8080-exec-1] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:15:20.384 [http-nio-8080-exec-1] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [undefined]!```
+24.10.2023 10:15:20.384 [http-nio-8080-exec-1] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:15:20.385 [http-nio-8080-exec-1] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:15:20.387 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:20:19.145 [http-nio-8080-exec-3] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:20:19.146 [http-nio-8080-exec-3] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:19.146 [http-nio-8080-exec-3] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [undefined]!```
+24.10.2023 10:20:19.146 [http-nio-8080-exec-3] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:19.147 [http-nio-8080-exec-3] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [undefined]!```
+24.10.2023 10:20:19.147 [http-nio-8080-exec-3] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:19.149 [http-nio-8080-exec-3] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:19.151 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:20:21.747 [http-nio-8080-exec-7] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:20:21.748 [http-nio-8080-exec-7] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:21.748 [http-nio-8080-exec-7] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [undefined]!```
+24.10.2023 10:20:21.748 [http-nio-8080-exec-7] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:21.748 [http-nio-8080-exec-7] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [undefined]!```
+24.10.2023 10:20:21.749 [http-nio-8080-exec-7] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:21.750 [http-nio-8080-exec-7] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:21.751 [http-nio-8080-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:20:22.580 [http-nio-8080-exec-6] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:20:22.580 [http-nio-8080-exec-6] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:22.580 [http-nio-8080-exec-6] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [16564848-1ff4-46ad-b3f4-c6fa97cec890]!```
+24.10.2023 10:20:22.581 [http-nio-8080-exec-6] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:22.581 [http-nio-8080-exec-6] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [16564848-1ff4-46ad-b3f4-c6fa97cec890]!```
+24.10.2023 10:20:22.581 [http-nio-8080-exec-6] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:22.582 [http-nio-8080-exec-6] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:22.583 [http-nio-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:20:25.022 [http-nio-8080-exec-9] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:20:25.022 [http-nio-8080-exec-9] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:25.022 [http-nio-8080-exec-9] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [e0cae44e-3baa-4a15-ae3d-670e26ac6241]!```
+24.10.2023 10:20:25.022 [http-nio-8080-exec-9] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:25.023 [http-nio-8080-exec-9] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [e0cae44e-3baa-4a15-ae3d-670e26ac6241]!```
+24.10.2023 10:20:25.023 [http-nio-8080-exec-9] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:25.024 [http-nio-8080-exec-9] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:25.025 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:20:25.473 [http-nio-8080-exec-2] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:20:25.473 [http-nio-8080-exec-2] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:25.473 [http-nio-8080-exec-2] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [62d4b075-da10-48ec-995d-c98ccb175233]!```
+24.10.2023 10:20:25.473 [http-nio-8080-exec-2] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:25.474 [http-nio-8080-exec-2] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [62d4b075-da10-48ec-995d-c98ccb175233]!```
+24.10.2023 10:20:25.474 [http-nio-8080-exec-2] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:25.475 [http-nio-8080-exec-2] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:25.476 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:20:25.877 [http-nio-8080-exec-8] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:20:25.877 [http-nio-8080-exec-8] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:25.878 [http-nio-8080-exec-8] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [37f1beb4-71f3-42f7-b4ca-cc3a2b55acb6]!```
+24.10.2023 10:20:25.878 [http-nio-8080-exec-8] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:25.879 [http-nio-8080-exec-8] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [37f1beb4-71f3-42f7-b4ca-cc3a2b55acb6]!```
+24.10.2023 10:20:25.879 [http-nio-8080-exec-8] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:25.885 [http-nio-8080-exec-8] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:25.886 [http-nio-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:20:26.269 [http-nio-8080-exec-10] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:20:26.269 [http-nio-8080-exec-10] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:26.269 [http-nio-8080-exec-10] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [94e9d499-5c76-4212-8772-1bb5f9012da4]!```
+24.10.2023 10:20:26.269 [http-nio-8080-exec-10] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:26.270 [http-nio-8080-exec-10] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [94e9d499-5c76-4212-8772-1bb5f9012da4]!```
+24.10.2023 10:20:26.270 [http-nio-8080-exec-10] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:26.271 [http-nio-8080-exec-10] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:26.272 [http-nio-8080-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:20:26.653 [http-nio-8080-exec-1] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:20:26.653 [http-nio-8080-exec-1] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:26.654 [http-nio-8080-exec-1] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [4dc1389d-0052-4f72-870c-4c943bd41d77]!```
+24.10.2023 10:20:26.654 [http-nio-8080-exec-1] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:26.678 [http-nio-8080-exec-1] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [4dc1389d-0052-4f72-870c-4c943bd41d77]!```
+24.10.2023 10:20:26.678 [http-nio-8080-exec-1] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:26.691 [http-nio-8080-exec-1] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:26.692 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:20:27.066 [http-nio-8080-exec-3] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:20:27.066 [http-nio-8080-exec-3] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:27.066 [http-nio-8080-exec-3] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [3332436e-c1df-4433-81b8-c5f7bb703685]!```
+24.10.2023 10:20:27.067 [http-nio-8080-exec-3] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:27.067 [http-nio-8080-exec-3] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [3332436e-c1df-4433-81b8-c5f7bb703685]!```
+24.10.2023 10:20:27.067 [http-nio-8080-exec-3] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:27.070 [http-nio-8080-exec-3] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:27.071 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:20:27.516 [http-nio-8080-exec-4] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:20:27.516 [http-nio-8080-exec-4] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:27.516 [http-nio-8080-exec-4] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [1dad8e24-c40b-4ca2-a5d0-fe49b670fc04]!```
+24.10.2023 10:20:27.517 [http-nio-8080-exec-4] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:27.517 [http-nio-8080-exec-4] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [1dad8e24-c40b-4ca2-a5d0-fe49b670fc04]!```
+24.10.2023 10:20:27.517 [http-nio-8080-exec-4] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:27.518 [http-nio-8080-exec-4] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:27.519 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:20:27.818 [http-nio-8080-exec-5] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:20:27.818 [http-nio-8080-exec-5] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:27.818 [http-nio-8080-exec-5] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [1bc0affa-2d1f-4e56-87e7-a18ef5e77890]!```
+24.10.2023 10:20:27.818 [http-nio-8080-exec-5] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:27.818 [http-nio-8080-exec-5] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [1bc0affa-2d1f-4e56-87e7-a18ef5e77890]!```
+24.10.2023 10:20:27.819 [http-nio-8080-exec-5] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:27.820 [http-nio-8080-exec-5] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:27.821 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:20:28.158 [http-nio-8080-exec-7] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:20:28.158 [http-nio-8080-exec-7] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:28.158 [http-nio-8080-exec-7] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [545c00f2-c1f4-4a92-9ffa-7907c494bcb1]!```
+24.10.2023 10:20:28.158 [http-nio-8080-exec-7] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:28.159 [http-nio-8080-exec-7] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [545c00f2-c1f4-4a92-9ffa-7907c494bcb1]!```
+24.10.2023 10:20:28.159 [http-nio-8080-exec-7] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:28.161 [http-nio-8080-exec-7] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:28.162 [http-nio-8080-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:20:28.430 [http-nio-8080-exec-6] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:20:28.430 [http-nio-8080-exec-6] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:28.431 [http-nio-8080-exec-6] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [4fc9a47e-3204-4d7d-80ac-f02d632d7777]!```
+24.10.2023 10:20:28.432 [http-nio-8080-exec-6] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:28.433 [http-nio-8080-exec-6] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [4fc9a47e-3204-4d7d-80ac-f02d632d7777]!```
+24.10.2023 10:20:28.433 [http-nio-8080-exec-6] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:28.434 [http-nio-8080-exec-6] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:28.435 [http-nio-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:20:28.792 [http-nio-8080-exec-9] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:20:28.793 [http-nio-8080-exec-9] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:28.793 [http-nio-8080-exec-9] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [eb0d83ee-2fd0-445d-9f8f-1129f4fa1cff]!```
+24.10.2023 10:20:28.793 [http-nio-8080-exec-9] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:28.793 [http-nio-8080-exec-9] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [eb0d83ee-2fd0-445d-9f8f-1129f4fa1cff]!```
+24.10.2023 10:20:28.793 [http-nio-8080-exec-9] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:28.795 [http-nio-8080-exec-9] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:28.796 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:20:29.147 [http-nio-8080-exec-2] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:20:29.148 [http-nio-8080-exec-2] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:29.149 [http-nio-8080-exec-2] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [71b269f5-adc3-402c-87a7-6cf40c0c8644]!```
+24.10.2023 10:20:29.149 [http-nio-8080-exec-2] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:29.150 [http-nio-8080-exec-2] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [71b269f5-adc3-402c-87a7-6cf40c0c8644]!```
+24.10.2023 10:20:29.150 [http-nio-8080-exec-2] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:29.151 [http-nio-8080-exec-2] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:29.152 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:20:29.613 [http-nio-8080-exec-8] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:20:29.613 [http-nio-8080-exec-8] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:29.613 [http-nio-8080-exec-8] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [eb0d83ee-2fd0-445d-9f8f-1129f4fa1cff]!```
+24.10.2023 10:20:29.613 [http-nio-8080-exec-8] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:29.614 [http-nio-8080-exec-8] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [eb0d83ee-2fd0-445d-9f8f-1129f4fa1cff]!```
+24.10.2023 10:20:29.614 [http-nio-8080-exec-8] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:29.618 [http-nio-8080-exec-8] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:29.618 [http-nio-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:20:30.031 [http-nio-8080-exec-10] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:20:30.031 [http-nio-8080-exec-10] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:30.031 [http-nio-8080-exec-10] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [4fc9a47e-3204-4d7d-80ac-f02d632d7777]!```
+24.10.2023 10:20:30.031 [http-nio-8080-exec-10] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:30.032 [http-nio-8080-exec-10] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [4fc9a47e-3204-4d7d-80ac-f02d632d7777]!```
+24.10.2023 10:20:30.032 [http-nio-8080-exec-10] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:30.038 [http-nio-8080-exec-10] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:30.039 [http-nio-8080-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:20:30.396 [http-nio-8080-exec-1] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:20:30.396 [http-nio-8080-exec-1] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:30.396 [http-nio-8080-exec-1] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [02a7dfc0-9fd9-4561-98f9-c02906b5f49e]!```
+24.10.2023 10:20:30.396 [http-nio-8080-exec-1] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:30.397 [http-nio-8080-exec-1] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [02a7dfc0-9fd9-4561-98f9-c02906b5f49e]!```
+24.10.2023 10:20:30.397 [http-nio-8080-exec-1] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:30.397 [http-nio-8080-exec-1] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:30.399 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:20:30.791 [http-nio-8080-exec-3] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:20:30.791 [http-nio-8080-exec-3] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:30.792 [http-nio-8080-exec-3] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [1bc0affa-2d1f-4e56-87e7-a18ef5e77890]!```
+24.10.2023 10:20:30.792 [http-nio-8080-exec-3] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:30.792 [http-nio-8080-exec-3] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [1bc0affa-2d1f-4e56-87e7-a18ef5e77890]!```
+24.10.2023 10:20:30.792 [http-nio-8080-exec-3] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:30.793 [http-nio-8080-exec-3] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:30.794 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:20:31.151 [http-nio-8080-exec-4] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:20:31.151 [http-nio-8080-exec-4] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:31.152 [http-nio-8080-exec-4] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [3332436e-c1df-4433-81b8-c5f7bb703685]!```
+24.10.2023 10:20:31.152 [http-nio-8080-exec-4] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:31.152 [http-nio-8080-exec-4] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [3332436e-c1df-4433-81b8-c5f7bb703685]!```
+24.10.2023 10:20:31.152 [http-nio-8080-exec-4] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:31.154 [http-nio-8080-exec-4] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:31.155 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:20:31.549 [http-nio-8080-exec-5] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:20:31.549 [http-nio-8080-exec-5] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:31.549 [http-nio-8080-exec-5] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [4dc1389d-0052-4f72-870c-4c943bd41d77]!```
+24.10.2023 10:20:31.550 [http-nio-8080-exec-5] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:31.551 [http-nio-8080-exec-5] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [4dc1389d-0052-4f72-870c-4c943bd41d77]!```
+24.10.2023 10:20:31.551 [http-nio-8080-exec-5] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:31.552 [http-nio-8080-exec-5] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:20:31.557 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:21:10.275 [http-nio-8080-exec-6] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:21:10.276 [http-nio-8080-exec-6] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:21:10.276 [http-nio-8080-exec-6] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [undefined]!```
+24.10.2023 10:21:10.276 [http-nio-8080-exec-6] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:21:10.277 [http-nio-8080-exec-6] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [undefined]!```
+24.10.2023 10:21:10.280 [http-nio-8080-exec-6] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:21:10.293 [http-nio-8080-exec-6] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:21:10.295 [http-nio-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:21:32.650 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+24.10.2023 10:21:32.837 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+24.10.2023 10:21:32.917 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+24.10.2023 10:21:52.277 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Starting NewsCrawlerBeApplication using Java 17.0.7 with PID 10736 (D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be\target\classes started by Quang Minh in D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be)
+24.10.2023 10:21:52.284 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - No active profile set, falling back to 1 default profile: "default"
+24.10.2023 10:21:52.496 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+24.10.2023 10:21:52.496 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+24.10.2023 10:21:54.564 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+24.10.2023 10:21:54.676 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 96 ms. Found 2 JPA repository interfaces.
+24.10.2023 10:21:55.971 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+24.10.2023 10:21:55.981 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+24.10.2023 10:21:55.983 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+24.10.2023 10:21:55.984 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+24.10.2023 10:21:56.093 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+24.10.2023 10:21:56.094 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3596 ms
+24.10.2023 10:21:56.443 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+24.10.2023 10:21:56.550 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+24.10.2023 10:21:56.554 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+24.10.2023 10:21:56.778 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+24.10.2023 10:21:56.990 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+24.10.2023 10:21:57.014 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+24.10.2023 10:21:57.297 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@32974003
+24.10.2023 10:21:57.299 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+24.10.2023 10:21:57.917 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+24.10.2023 10:22:00.928 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+24.10.2023 10:22:01.239 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+24.10.2023 10:22:03.071 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+24.10.2023 10:22:03.981 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+24.10.2023 10:22:05.323 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+24.10.2023 10:22:05.387 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+24.10.2023 10:22:05.427 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+24.10.2023 10:22:05.456 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Started NewsCrawlerBeApplication in 15.408 seconds (process running for 16.939)
+24.10.2023 10:22:20.454 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24.10.2023 10:22:20.455 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+24.10.2023 10:22:20.456 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+24.10.2023 10:22:23.612 [http-nio-8080-exec-3] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:22:23.630 [http-nio-8080-exec-3] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:23.632 [http-nio-8080-exec-3] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [undefined]!```
+24.10.2023 10:22:23.633 [http-nio-8080-exec-3] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:23.636 [http-nio-8080-exec-3] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [undefined]!```
+24.10.2023 10:22:23.636 [http-nio-8080-exec-3] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:23.640 [http-nio-8080-exec-3] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:23.642 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:22:28.440 [http-nio-8080-exec-4] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:22:28.440 [http-nio-8080-exec-4] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:28.440 [http-nio-8080-exec-4] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [16564848-1ff4-46ad-b3f4-c6fa97cec890]!```
+24.10.2023 10:22:28.440 [http-nio-8080-exec-4] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:28.441 [http-nio-8080-exec-4] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [16564848-1ff4-46ad-b3f4-c6fa97cec890]!```
+24.10.2023 10:22:28.441 [http-nio-8080-exec-4] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:28.442 [http-nio-8080-exec-4] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:28.444 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:22:29.317 [http-nio-8080-exec-5] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:22:29.317 [http-nio-8080-exec-5] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:29.317 [http-nio-8080-exec-5] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [e0cae44e-3baa-4a15-ae3d-670e26ac6241]!```
+24.10.2023 10:22:29.317 [http-nio-8080-exec-5] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:29.318 [http-nio-8080-exec-5] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [e0cae44e-3baa-4a15-ae3d-670e26ac6241]!```
+24.10.2023 10:22:29.319 [http-nio-8080-exec-5] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:29.321 [http-nio-8080-exec-5] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:29.322 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:22:29.707 [http-nio-8080-exec-6] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:22:29.707 [http-nio-8080-exec-6] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:29.708 [http-nio-8080-exec-6] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [62d4b075-da10-48ec-995d-c98ccb175233]!```
+24.10.2023 10:22:29.708 [http-nio-8080-exec-6] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:29.708 [http-nio-8080-exec-6] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [62d4b075-da10-48ec-995d-c98ccb175233]!```
+24.10.2023 10:22:29.708 [http-nio-8080-exec-6] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:29.709 [http-nio-8080-exec-6] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:29.711 [http-nio-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:22:30.044 [http-nio-8080-exec-7] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:22:30.044 [http-nio-8080-exec-7] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:30.044 [http-nio-8080-exec-7] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [37f1beb4-71f3-42f7-b4ca-cc3a2b55acb6]!```
+24.10.2023 10:22:30.044 [http-nio-8080-exec-7] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:30.045 [http-nio-8080-exec-7] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [37f1beb4-71f3-42f7-b4ca-cc3a2b55acb6]!```
+24.10.2023 10:22:30.045 [http-nio-8080-exec-7] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:30.046 [http-nio-8080-exec-7] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:30.047 [http-nio-8080-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:22:30.380 [http-nio-8080-exec-8] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:22:30.380 [http-nio-8080-exec-8] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:30.380 [http-nio-8080-exec-8] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [94e9d499-5c76-4212-8772-1bb5f9012da4]!```
+24.10.2023 10:22:30.380 [http-nio-8080-exec-8] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:30.381 [http-nio-8080-exec-8] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [94e9d499-5c76-4212-8772-1bb5f9012da4]!```
+24.10.2023 10:22:30.381 [http-nio-8080-exec-8] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:30.382 [http-nio-8080-exec-8] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:30.383 [http-nio-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:22:31.268 [http-nio-8080-exec-9] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:22:31.269 [http-nio-8080-exec-9] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:31.269 [http-nio-8080-exec-9] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [41b18985-6b1a-4faa-b25e-b0c23afaf177]!```
+24.10.2023 10:22:31.269 [http-nio-8080-exec-9] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:31.270 [http-nio-8080-exec-9] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [41b18985-6b1a-4faa-b25e-b0c23afaf177]!```
+24.10.2023 10:22:31.270 [http-nio-8080-exec-9] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:31.272 [http-nio-8080-exec-9] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:31.273 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:22:32.298 [http-nio-8080-exec-10] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:22:32.298 [http-nio-8080-exec-10] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:32.299 [http-nio-8080-exec-10] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [d26043bd-86a9-46e7-9673-97559577c453]!```
+24.10.2023 10:22:32.299 [http-nio-8080-exec-10] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:32.299 [http-nio-8080-exec-10] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [d26043bd-86a9-46e7-9673-97559577c453]!```
+24.10.2023 10:22:32.299 [http-nio-8080-exec-10] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:32.300 [http-nio-8080-exec-10] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:32.301 [http-nio-8080-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:22:32.618 [http-nio-8080-exec-1] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:22:32.619 [http-nio-8080-exec-1] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:32.619 [http-nio-8080-exec-1] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [16564848-1ff4-46ad-b3f4-c6fa97cec890]!```
+24.10.2023 10:22:32.619 [http-nio-8080-exec-1] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:32.620 [http-nio-8080-exec-1] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [16564848-1ff4-46ad-b3f4-c6fa97cec890]!```
+24.10.2023 10:22:32.620 [http-nio-8080-exec-1] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:32.621 [http-nio-8080-exec-1] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:32.623 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:22:34.054 [http-nio-8080-exec-2] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:22:34.054 [http-nio-8080-exec-2] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:34.055 [http-nio-8080-exec-2] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [undefined]!```
+24.10.2023 10:22:34.055 [http-nio-8080-exec-2] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:34.057 [http-nio-8080-exec-2] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [undefined]!```
+24.10.2023 10:22:34.058 [http-nio-8080-exec-2] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:34.059 [http-nio-8080-exec-2] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:34.060 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:22:36.369 [http-nio-8080-exec-5] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+24.10.2023 10:22:36.369 [http-nio-8080-exec-5] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:36.369 [http-nio-8080-exec-5] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [undefined]!```
+24.10.2023 10:22:36.369 [http-nio-8080-exec-5] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:36.370 [http-nio-8080-exec-5] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [undefined]!```
+24.10.2023 10:22:36.371 [http-nio-8080-exec-5] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:36.373 [http-nio-8080-exec-5] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+24.10.2023 10:22:36.374 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+24.10.2023 10:25:53.446 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+24.10.2023 10:25:53.475 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+24.10.2023 10:25:53.487 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+24.10.2023 23:59:41.714 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Starting NewsCrawlerBeApplication using Java 17.0.7 with PID 6936 (D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be\target\classes started by Quang Minh in D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be)
+24.10.2023 23:59:41.732 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - No active profile set, falling back to 1 default profile: "default"
+24.10.2023 23:59:41.865 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+24.10.2023 23:59:41.865 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+24.10.2023 23:59:43.203 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+24.10.2023 23:59:43.306 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 91 ms. Found 2 JPA repository interfaces.
+24.10.2023 23:59:44.424 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+24.10.2023 23:59:44.435 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+24.10.2023 23:59:44.437 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+24.10.2023 23:59:44.438 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+24.10.2023 23:59:44.530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+24.10.2023 23:59:44.531 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2664 ms
+24.10.2023 23:59:44.811 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+24.10.2023 23:59:44.918 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+24.10.2023 23:59:44.922 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+24.10.2023 23:59:45.154 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+24.10.2023 23:59:45.346 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+24.10.2023 23:59:45.376 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+24.10.2023 23:59:45.739 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@c383139
+24.10.2023 23:59:45.741 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+24.10.2023 23:59:46.126 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+24.10.2023 23:59:47.037 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+24.10.2023 23:59:47.177 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+24.10.2023 23:59:48.114 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+24.10.2023 23:59:48.900 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+24.10.2023 23:59:50.019 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+24.10.2023 23:59:50.048 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+24.10.2023 23:59:50.073 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+24.10.2023 23:59:50.087 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Started NewsCrawlerBeApplication in 9.406 seconds (process running for 10.857)

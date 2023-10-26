@@ -1,0 +1,403 @@
+26.10.2023 10:16:00.323 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Starting NewsCrawlerBeApplication using Java 17.0.7 with PID 10028 (D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be\target\classes started by Quang Minh in D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be)
+26.10.2023 10:16:00.326 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - No active profile set, falling back to 1 default profile: "default"
+26.10.2023 10:16:00.415 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26.10.2023 10:16:00.416 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26.10.2023 10:16:01.936 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26.10.2023 10:16:02.039 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 92 ms. Found 2 JPA repository interfaces.
+26.10.2023 10:16:03.217 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+26.10.2023 10:16:03.228 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+26.10.2023 10:16:03.230 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+26.10.2023 10:16:03.231 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+26.10.2023 10:16:03.323 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+26.10.2023 10:16:03.323 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2906 ms
+26.10.2023 10:16:03.631 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+26.10.2023 10:16:03.723 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+26.10.2023 10:16:03.727 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+26.10.2023 10:16:03.952 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+26.10.2023 10:16:04.147 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+26.10.2023 10:16:04.168 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+26.10.2023 10:16:04.445 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4a460679
+26.10.2023 10:16:04.446 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+26.10.2023 10:16:04.885 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+26.10.2023 10:16:05.836 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26.10.2023 10:16:05.997 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26.10.2023 10:16:06.972 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+26.10.2023 10:16:07.812 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26.10.2023 10:16:09.147 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+26.10.2023 10:16:09.177 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+26.10.2023 10:16:09.205 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+26.10.2023 10:16:09.221 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Started NewsCrawlerBeApplication in 10.125 seconds (process running for 12.011)
+26.10.2023 10:18:37.793 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26.10.2023 10:18:37.794 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+26.10.2023 10:18:37.796 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+26.10.2023 10:19:15.684 [http-nio-8080-exec-2] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in the request target [/api/news?page=1&size=[object%20Object] ]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:482)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:264)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+26.10.2023 10:39:45.368 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+26.10.2023 10:39:45.432 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+26.10.2023 10:39:45.457 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+26.10.2023 10:39:53.548 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Starting NewsCrawlerBeApplication using Java 17.0.7 with PID 5896 (D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be\target\classes started by Quang Minh in D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be)
+26.10.2023 10:39:53.552 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - No active profile set, falling back to 1 default profile: "default"
+26.10.2023 10:39:53.709 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26.10.2023 10:39:53.710 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26.10.2023 10:39:55.390 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26.10.2023 10:39:55.506 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103 ms. Found 2 JPA repository interfaces.
+26.10.2023 10:39:56.732 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+26.10.2023 10:39:56.743 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+26.10.2023 10:39:56.745 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+26.10.2023 10:39:56.746 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+26.10.2023 10:39:56.853 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+26.10.2023 10:39:56.853 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3142 ms
+26.10.2023 10:39:57.154 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+26.10.2023 10:39:57.247 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+26.10.2023 10:39:57.250 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+26.10.2023 10:39:57.460 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+26.10.2023 10:39:57.652 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+26.10.2023 10:39:57.674 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+26.10.2023 10:39:57.955 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@163307c2
+26.10.2023 10:39:57.957 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+26.10.2023 10:39:58.391 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+26.10.2023 10:39:59.384 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26.10.2023 10:39:59.498 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26.10.2023 10:40:00.587 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+26.10.2023 10:40:01.577 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26.10.2023 10:40:04.091 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+26.10.2023 10:40:04.161 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+26.10.2023 10:40:04.210 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+26.10.2023 10:40:04.246 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Started NewsCrawlerBeApplication in 11.762 seconds (process running for 13.873)
+26.10.2023 10:40:22.846 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26.10.2023 10:40:22.846 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+26.10.2023 10:40:22.847 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+26.10.2023 14:28:29.859 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Starting NewsCrawlerBeApplication using Java 17.0.7 with PID 12780 (D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be\target\classes started by Quang Minh in D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be)
+26.10.2023 14:28:29.862 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - No active profile set, falling back to 1 default profile: "default"
+26.10.2023 14:28:30.034 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26.10.2023 14:28:30.035 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26.10.2023 14:28:34.517 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26.10.2023 14:28:34.869 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 317 ms. Found 2 JPA repository interfaces.
+26.10.2023 14:28:37.264 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+26.10.2023 14:28:37.279 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+26.10.2023 14:28:37.283 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+26.10.2023 14:28:37.284 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+26.10.2023 14:28:37.437 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+26.10.2023 14:28:37.438 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7383 ms
+26.10.2023 14:28:38.099 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+26.10.2023 14:28:38.248 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+26.10.2023 14:28:38.252 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+26.10.2023 14:28:38.635 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+26.10.2023 14:28:39.551 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+26.10.2023 14:28:39.799 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+26.10.2023 14:28:40.330 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3c7d715f
+26.10.2023 14:28:40.333 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+26.10.2023 14:28:41.273 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+26.10.2023 14:28:43.089 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26.10.2023 14:28:43.318 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26.10.2023 14:28:45.039 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+26.10.2023 14:28:46.386 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26.10.2023 14:28:49.200 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+26.10.2023 14:28:49.249 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+26.10.2023 14:28:49.369 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+26.10.2023 14:28:49.544 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Started NewsCrawlerBeApplication in 22.268 seconds (process running for 24.39)
+26.10.2023 14:29:02.296 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26.10.2023 14:29:02.297 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+26.10.2023 14:29:02.300 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+26.10.2023 15:05:13.792 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+26.10.2023 15:05:14.169 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+26.10.2023 15:05:14.196 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+26.10.2023 15:05:23.798 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Starting NewsCrawlerBeApplication using Java 17.0.7 with PID 5308 (D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be\target\classes started by Quang Minh in D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be)
+26.10.2023 15:05:23.804 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - No active profile set, falling back to 1 default profile: "default"
+26.10.2023 15:05:23.914 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26.10.2023 15:05:23.915 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26.10.2023 15:05:25.834 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26.10.2023 15:05:25.978 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 128 ms. Found 2 JPA repository interfaces.
+26.10.2023 15:05:27.835 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+26.10.2023 15:05:27.847 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+26.10.2023 15:05:27.850 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+26.10.2023 15:05:27.850 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+26.10.2023 15:05:27.955 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+26.10.2023 15:05:27.956 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4038 ms
+26.10.2023 15:05:28.308 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+26.10.2023 15:05:28.430 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+26.10.2023 15:05:28.434 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+26.10.2023 15:05:28.723 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+26.10.2023 15:05:28.956 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+26.10.2023 15:05:28.984 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+26.10.2023 15:05:29.281 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4147e0eb
+26.10.2023 15:05:29.283 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+26.10.2023 15:05:29.823 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+26.10.2023 15:05:31.186 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26.10.2023 15:05:31.343 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26.10.2023 15:05:32.503 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+26.10.2023 15:05:33.629 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26.10.2023 15:05:35.057 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+26.10.2023 15:05:35.090 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+26.10.2023 15:05:35.121 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+26.10.2023 15:05:35.141 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Started NewsCrawlerBeApplication in 12.693 seconds (process running for 15.778)
+26.10.2023 15:06:46.911 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26.10.2023 15:06:46.911 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+26.10.2023 15:06:46.913 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+26.10.2023 15:07:40.044 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+26.10.2023 15:07:40.052 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+26.10.2023 15:07:40.062 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+26.10.2023 15:07:48.927 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Starting NewsCrawlerBeApplication using Java 17.0.7 with PID 6720 (D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be\target\classes started by Quang Minh in D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be)
+26.10.2023 15:07:48.930 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - No active profile set, falling back to 1 default profile: "default"
+26.10.2023 15:07:49.006 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26.10.2023 15:07:49.006 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26.10.2023 15:07:50.347 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26.10.2023 15:07:50.475 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 116 ms. Found 2 JPA repository interfaces.
+26.10.2023 15:07:51.613 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+26.10.2023 15:07:51.623 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+26.10.2023 15:07:51.625 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+26.10.2023 15:07:51.625 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+26.10.2023 15:07:51.714 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+26.10.2023 15:07:51.715 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2707 ms
+26.10.2023 15:07:51.993 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+26.10.2023 15:07:52.058 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+26.10.2023 15:07:52.061 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+26.10.2023 15:07:52.276 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+26.10.2023 15:07:52.526 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+26.10.2023 15:07:52.557 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+26.10.2023 15:07:53.490 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@35467dde
+26.10.2023 15:07:53.493 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+26.10.2023 15:07:54.338 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+26.10.2023 15:07:56.011 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26.10.2023 15:07:56.142 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26.10.2023 15:07:57.122 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+26.10.2023 15:07:58.086 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26.10.2023 15:07:59.477 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+26.10.2023 15:07:59.508 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+26.10.2023 15:07:59.588 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+26.10.2023 15:07:59.623 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Started NewsCrawlerBeApplication in 11.535 seconds (process running for 12.985)
+26.10.2023 15:08:00.838 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26.10.2023 15:08:00.838 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+26.10.2023 15:08:00.840 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+26.10.2023 15:08:10.705 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+26.10.2023 15:08:10.709 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+26.10.2023 15:08:10.723 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+26.10.2023 15:08:17.994 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Starting NewsCrawlerBeApplication using Java 17.0.7 with PID 11100 (D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be\target\classes started by Quang Minh in D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be)
+26.10.2023 15:08:17.999 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - No active profile set, falling back to 1 default profile: "default"
+26.10.2023 15:08:18.171 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26.10.2023 15:08:18.171 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26.10.2023 15:08:19.891 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26.10.2023 15:08:19.992 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 88 ms. Found 2 JPA repository interfaces.
+26.10.2023 15:08:21.657 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+26.10.2023 15:08:21.675 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+26.10.2023 15:08:21.680 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+26.10.2023 15:08:21.680 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+26.10.2023 15:08:21.788 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+26.10.2023 15:08:21.789 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3618 ms
+26.10.2023 15:08:22.197 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+26.10.2023 15:08:22.299 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+26.10.2023 15:08:22.303 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+26.10.2023 15:08:22.769 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+26.10.2023 15:08:23.784 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+26.10.2023 15:08:23.926 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+26.10.2023 15:08:24.339 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5ccc9d44
+26.10.2023 15:08:24.343 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+26.10.2023 15:08:25.054 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+26.10.2023 15:08:26.547 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26.10.2023 15:08:26.663 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26.10.2023 15:08:27.967 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+26.10.2023 15:08:29.419 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26.10.2023 15:08:32.388 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+26.10.2023 15:08:32.440 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+26.10.2023 15:08:32.490 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+26.10.2023 15:08:32.587 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Started NewsCrawlerBeApplication in 15.575 seconds (process running for 17.363)
+26.10.2023 15:08:33.486 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26.10.2023 15:08:33.487 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+26.10.2023 15:08:33.489 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+26.10.2023 15:08:54.826 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+26.10.2023 15:08:54.830 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+26.10.2023 15:08:54.837 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+org.springframework.transaction.UnexpectedRollbackException: Transaction silently rolled back because it has been marked as rollback-only
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:752)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:660)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:410)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl$$SpringCGLIB$$0.crawlNewsDataFromTuoiTreNews(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+26.10.2023 15:08:54.842 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+26.10.2023 15:09:42.295 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Starting NewsCrawlerBeApplication using Java 17.0.7 with PID 6228 (D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be\target\classes started by Quang Minh in D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be)
+26.10.2023 15:09:42.298 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - No active profile set, falling back to 1 default profile: "default"
+26.10.2023 15:09:42.378 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26.10.2023 15:09:42.378 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26.10.2023 15:09:43.976 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26.10.2023 15:09:44.091 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102 ms. Found 2 JPA repository interfaces.
+26.10.2023 15:09:45.520 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+26.10.2023 15:09:45.532 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+26.10.2023 15:09:45.534 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+26.10.2023 15:09:45.535 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+26.10.2023 15:09:45.631 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+26.10.2023 15:09:45.633 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3252 ms
+26.10.2023 15:09:45.919 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+26.10.2023 15:09:45.994 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+26.10.2023 15:09:45.997 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+26.10.2023 15:09:46.183 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+26.10.2023 15:09:46.362 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+26.10.2023 15:09:46.383 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+26.10.2023 15:09:46.611 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@ae4d18e
+26.10.2023 15:09:46.613 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+26.10.2023 15:09:47.024 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+26.10.2023 15:09:48.030 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26.10.2023 15:09:48.160 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26.10.2023 15:09:49.176 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+26.10.2023 15:09:49.944 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26.10.2023 15:09:51.424 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+26.10.2023 15:09:51.454 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+26.10.2023 15:09:51.481 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+26.10.2023 15:09:51.503 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Started NewsCrawlerBeApplication in 9.99 seconds (process running for 13.124)
+26.10.2023 15:09:57.254 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26.10.2023 15:09:57.255 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+26.10.2023 15:09:57.258 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+26.10.2023 15:11:24.014 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+26.10.2023 15:11:24.021 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+26.10.2023 15:11:24.031 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+26.10.2023 15:11:30.463 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Starting NewsCrawlerBeApplication using Java 17.0.7 with PID 6208 (D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be\target\classes started by Quang Minh in D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be)
+26.10.2023 15:11:30.469 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - No active profile set, falling back to 1 default profile: "default"
+26.10.2023 15:11:30.619 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26.10.2023 15:11:30.619 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26.10.2023 15:11:33.226 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26.10.2023 15:11:33.522 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 270 ms. Found 2 JPA repository interfaces.
+26.10.2023 15:11:36.866 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+26.10.2023 15:11:36.899 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+26.10.2023 15:11:36.903 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+26.10.2023 15:11:36.904 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+26.10.2023 15:11:37.122 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+26.10.2023 15:11:37.123 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6502 ms
+26.10.2023 15:11:37.765 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+26.10.2023 15:11:38.000 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+26.10.2023 15:11:38.004 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+26.10.2023 15:11:38.470 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+26.10.2023 15:11:38.852 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+26.10.2023 15:11:38.888 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+26.10.2023 15:11:39.380 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@23ec5f9d
+26.10.2023 15:11:39.383 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+26.10.2023 15:11:40.127 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+26.10.2023 15:11:42.300 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26.10.2023 15:11:42.581 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26.10.2023 15:11:44.743 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+26.10.2023 15:11:46.161 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26.10.2023 15:11:49.044 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+26.10.2023 15:11:49.123 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+26.10.2023 15:11:49.178 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+26.10.2023 15:11:49.210 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Started NewsCrawlerBeApplication in 19.855 seconds (process running for 21.78)
+26.10.2023 15:12:37.646 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+26.10.2023 15:12:37.651 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+26.10.2023 15:12:37.661 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+26.10.2023 15:12:46.384 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Starting NewsCrawlerBeApplication using Java 17.0.7 with PID 10400 (D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be\target\classes started by Quang Minh in D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be)
+26.10.2023 15:12:46.388 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - No active profile set, falling back to 1 default profile: "default"
+26.10.2023 15:12:46.493 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26.10.2023 15:12:46.494 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26.10.2023 15:12:48.015 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26.10.2023 15:12:48.143 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 117 ms. Found 2 JPA repository interfaces.
+26.10.2023 15:12:49.443 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+26.10.2023 15:12:49.457 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+26.10.2023 15:12:49.459 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+26.10.2023 15:12:49.459 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+26.10.2023 15:12:49.554 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+26.10.2023 15:12:49.556 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3058 ms
+26.10.2023 15:12:49.868 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+26.10.2023 15:12:49.942 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+26.10.2023 15:12:49.948 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+26.10.2023 15:12:50.187 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+26.10.2023 15:12:50.384 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+26.10.2023 15:12:50.409 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+26.10.2023 15:12:50.648 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@373c8b50
+26.10.2023 15:12:50.651 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+26.10.2023 15:12:51.122 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+26.10.2023 15:12:52.254 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26.10.2023 15:12:52.398 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26.10.2023 15:12:53.898 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+26.10.2023 15:12:54.912 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26.10.2023 15:12:56.295 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+26.10.2023 15:12:56.335 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+26.10.2023 15:12:56.365 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+26.10.2023 15:12:56.383 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Started NewsCrawlerBeApplication in 10.937 seconds (process running for 13.521)
+26.10.2023 15:13:32.762 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26.10.2023 15:13:32.762 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+26.10.2023 15:13:32.764 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+26.10.2023 15:14:38.395 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+26.10.2023 15:14:38.411 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+26.10.2023 15:14:38.423 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+26.10.2023 15:14:54.846 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Starting NewsCrawlerBeApplication using Java 17.0.7 with PID 12088 (D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be\target\classes started by Quang Minh in D:\WORKSPACE\MeU-Solutions\news-crawler\news-crawler-be)
+26.10.2023 15:14:54.855 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - No active profile set, falling back to 1 default profile: "default"
+26.10.2023 15:14:54.979 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26.10.2023 15:14:54.980 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26.10.2023 15:14:58.918 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26.10.2023 15:14:59.080 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 149 ms. Found 2 JPA repository interfaces.
+26.10.2023 15:15:00.751 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+26.10.2023 15:15:00.767 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+26.10.2023 15:15:00.770 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+26.10.2023 15:15:00.770 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+26.10.2023 15:15:00.901 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+26.10.2023 15:15:00.902 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5920 ms
+26.10.2023 15:15:01.356 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+26.10.2023 15:15:01.477 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+26.10.2023 15:15:01.482 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+26.10.2023 15:15:01.764 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+26.10.2023 15:15:02.087 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+26.10.2023 15:15:02.124 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+26.10.2023 15:15:02.438 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@cda4695
+26.10.2023 15:15:02.441 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+26.10.2023 15:15:02.949 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+26.10.2023 15:15:04.601 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26.10.2023 15:15:04.831 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26.10.2023 15:15:07.312 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+26.10.2023 15:15:08.330 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26.10.2023 15:15:10.230 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+26.10.2023 15:15:10.271 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+26.10.2023 15:15:10.311 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+26.10.2023 15:15:10.331 [restartedMain] INFO  c.m.n.NewsCrawlerBeApplication - Started NewsCrawlerBeApplication in 16.573 seconds (process running for 18.645)
+26.10.2023 15:15:10.459 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26.10.2023 15:15:10.460 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+26.10.2023 15:15:10.463 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+26.10.2023 15:33:52.792 [http-nio-8080-exec-3] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+26.10.2023 15:33:53.204 [http-nio-8080-exec-3] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+26.10.2023 15:33:53.205 [http-nio-8080-exec-3] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [undefined]!```
+26.10.2023 15:33:53.206 [http-nio-8080-exec-3] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+26.10.2023 15:33:53.222 [http-nio-8080-exec-3] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [undefined]!```
+26.10.2023 15:33:53.224 [http-nio-8080-exec-3] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+26.10.2023 15:33:53.265 [http-nio-8080-exec-3] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+26.10.2023 15:33:53.274 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]
+26.10.2023 15:33:57.817 [http-nio-8080-exec-4] WARN  c.m.n.logging.ConverterLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.converter.Impl.NewsDetailConverterImpl.newsEntityToNewsDetailResponese() !ARGS: [null]!```
+26.10.2023 15:33:57.817 [http-nio-8080-exec-4] ERROR c.m.n.logging.ConverterLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+26.10.2023 15:33:57.818 [http-nio-8080-exec-4] WARN  c.m.n.logging.ServiceLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.service.Impl.NewsDetailServiceImpl.findNewsDetailById() !ARGS: [undefined]!```
+26.10.2023 15:33:57.818 [http-nio-8080-exec-4] ERROR c.m.n.logging.ServiceLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+26.10.2023 15:33:57.819 [http-nio-8080-exec-4] WARN  c.m.n.logging.ControllerLogger - ```yaml
+!##EXCEPTION: com.meu.news_crawler_be.controller.NewsDetailController.findNewsDetail() !ARGS: [undefined]!```
+26.10.2023 15:33:57.819 [http-nio-8080-exec-4] ERROR c.m.n.logging.ControllerLogger - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+26.10.2023 15:33:57.830 [http-nio-8080-exec-4] ERROR c.m.n.exception.ExceptionController - ||[java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]||
+26.10.2023 15:33:57.835 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Cannot invoke "com.meu.news_crawler_be.entity.NewsDetail.getCategory()" because "newsDetail" is null]

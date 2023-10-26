@@ -1,7 +1,5 @@
 package com.meu.news_crawler_be.logging;
 
-import com.meu.news_crawler_be.config.AppLogger;
-import org.apache.log4j.Logger;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
@@ -9,11 +7,13 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Aspect
 @Component
 public class ConfigLogger {
-    private final Logger LOGGER = AppLogger.LOGGER;
+    private final Logger LOGGER = LoggerFactory.getLogger(ConfigLogger.class);
 
     @Pointcut("execution(public * com.meu.news_crawler_be.config.*.*(..))")
     public void configMethods() {}

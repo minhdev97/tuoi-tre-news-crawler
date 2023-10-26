@@ -17,7 +17,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-
+//http://localhost:8080/docs/swagger-ui/index.html
+//http://localhost:8080/docs/api-docs
 @RestController
 @CrossOrigin("*")
 @RequestMapping("/api/categories")
@@ -26,6 +27,7 @@ import java.util.List;
         description = "API endpoint to get categories"
 )
 public class CategoryController {
+
     @Autowired
     private CategoryService categoryService;
 
@@ -41,11 +43,25 @@ public class CategoryController {
                                             schema = @Schema(implementation = CategoryResponseDTO.class)
                                     )
                             )
+                    ),
+                    @ApiResponse(
+                            responseCode = "204",
+                            description = "No categories found",
+                            content = @Content
+                    ),
+                    @ApiResponse(
+                            responseCode = "500",
+                            description = "Internal server error",
+                            content = @Content
                     )
             }
     )
     public ResponseEntity<?> findAllCategories() {
         List<CategoryResponseDTO> categories = categoryService.findAll();
-        return new ResponseEntity<>(categories, HttpStatus.OK);
+        if (categories != null && !categories.isEmpty()) {
+            return new ResponseEntity<>(categories, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
     }
 }
